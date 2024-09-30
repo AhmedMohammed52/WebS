@@ -1,0 +1,956 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --main-color: #6195ff;
+}
+.container {
+  width: 100%;
+  height: 800vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------------------- Start First Page Style ----------------------- */
+.homePage {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.726),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(Images/Bg.webp) center no-repeat;
+  background-size: cover;
+}
+/* ----------------------- Start Header Style ----------------------- */
+header {
+  width: 100%;
+  height: 60px;
+  padding: 10px 40px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999999999999999999999;
+}
+header .logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  padding-left: 50px;
+  cursor: pointer;
+}
+header .logo span {
+  color: var(--main-color);
+}
+header ul li {
+  display: inline-block;
+  padding: 0 15px;
+  list-style: none;
+}
+header ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+header ul li a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -7px;
+  width: 0;
+  height: 3px;
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+header ul li a:hover::after {
+  width: 100%;
+}
+/* ----------------------- End Header Style ----------------------- */
+/* ----------------------- Strat Content Of First Page Style ----------------------- */
+
+.content {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.content h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+}
+.content h1 span {
+  color: var(--main-color);
+}
+.content p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+.content button {
+  width: 150px;
+  padding: 20px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 15px;
+  transition: 0.5s;
+}
+.content .btn {
+  color: #fff;
+  background-color: var(--main-color);
+}
+.content button:hover {
+  background-color: transparent;
+  outline: 2px solid #fff;
+  color: #fff;
+}
+.content .btn:hover {
+  outline: 2px solid var(--main-color);
+}
+
+/* ----------------------- End Content Of First Page Style ----------------------- */
+/* ----------------------- End First Page Style ----------------------- */
+
+/* ----------------------- Start Seconde Page Style ----------------------- */
+.pageTwo {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.pageTwo h3 {
+  color: #333;
+  font-size: 35px;
+  font-weight: bold;
+  position: relative;
+  margin-top: 100px;
+}
+.pageTwo h3::after {
+  position: absolute;
+  content: "";
+  left: 120px;
+  bottom: -20px;
+  width: 40%;
+  height: 5px;
+  border-radius: 8px;
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+/* ------------------- Start Box Container Style ---------------------- */
+.pageTwo .boxContainer {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.pageTwo .boxContainer .box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 15px;
+  border-radius: 10px;
+  outline: 1px solid #3333335e;
+  position: relative;
+  transition: 0.7s;
+}
+.pageTwo .boxContainer .box::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: #333;
+  border-radius: 10px;
+  transition: 0.7s;
+  z-index: -1;
+}
+.pageTwo .boxContainer .box:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.pageTwo .boxContainer .box h4 {
+  color: #333;
+  font-size: 30px;
+  font-weight: 600;
+  transition: 0.7s;
+}
+.pageTwo .boxContainer .box:hover h4 {
+  color: #fff;
+}
+.pageTwo .boxContainer .box i {
+  font-size: 40px;
+  color: var(--main-color);
+  padding: 15px 0;
+}
+.pageTwo .boxContainer .box p {
+  color: #a9a5a5;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.pageTwo .boxContainer .box button {
+  padding: 20px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--main-color);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+.pageTwo .boxContainer .box button i {
+  font-size: 14px;
+  transition: 0.5s;
+}
+.pageTwo .boxContainer .box button:hover i {
+  padding-left: 15px;
+}
+/* ------------------- End Box Container Style ---------------------- */
+/* ----------------------- End Seconde Page Style ----------------------- */
+
+/* ------------------- Start Page Three (3) Style ----------------- */
+
+.pageThreee {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a19f9f5e;
+  padding: 100px 0 50px;
+}
+.pageThreee h3 {
+  color: #333;
+  font-size: 35px;
+  font-weight: bold;
+  position: relative;
+}
+.pageThreee h3::after {
+  position: absolute;
+  content: "";
+  left: 70px;
+  bottom: -20px;
+  width: 40%;
+  height: 5px;
+  border-radius: 8px;
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+/* --------------- Start Works Box Style ------------------  */
+.workContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  margin-top: 50px;
+}
+.pageThreee .work {
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  position: relative;
+}
+.pageThreee .work img {
+  width: 250px;
+  height: 250px;
+}
+.pageThreee .work .summary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s;
+}
+.pageThreee .work:hover .summary {
+  opacity: 1;
+  visibility: visible;
+}
+.pageThreee .work .summary div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.pageThreee .work .summary div span {
+  color: var(--main-color);
+  font-size: 25px;
+  font-weight: bold;
+}
+.pageThreee .work .summary div p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 0;
+}
+.pageThreee .work .summary div main i {
+  font-size: 20px;
+  padding: 0 7px;
+  cursor: pointer;
+  color: #fff;
+}
+.pageThreee .work .summary:hover div {
+  z-index: 9999999;
+}
+/* --------------- End Works Box Style ------------------  */
+/* ------------------- End Page Three (3) Style ----------------- */
+
+/* ------------------- Start Page Four (4) Style ----------------- */
+
+.pageFour {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 50px;
+}
+.pageFour h3 {
+  color: #333;
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+}
+.pageFour h3::after {
+  position: absolute;
+  content: "";
+  left: 75px;
+  bottom: -20px;
+  width: 40%;
+  height: 5px;
+  border-radius: 8px;
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+
+/* ----------------------- Start Offers Containers Box Style ---------------------------- */
+.offersContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.offersContainer .offer {
+  width: 25%;
+  height: 170px;
+  border-radius: 10px;
+  outline: 1px solid #3333335e;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  margin: 0 25px 25px;
+  position: relative;
+  overflow: hidden;
+}
+.offersContainer .offer::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: #333;
+  border-radius: 10px;
+  transition: 0.7s;
+  z-index: -1;
+}
+.offersContainer .offer:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.offersContainer .offer .icon {
+  font-size: 50px;
+  color: var(--main-color);
+}
+.offersContainer .offer .title h4 {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 0;
+  transition: 0.7s;
+}
+.offersContainer .offer:hover .title h4 {
+  color: #fff;
+}
+.offersContainer .offer .title p {
+  letter-spacing: 1px;
+  line-height: 1.2;
+  color: #a9a5a5;
+}
+/* ----------------------- End Offers Containers Box Style ---------------------------- */
+/* ------------------- End Page Four (4) Style ----------------- */
+
+/* ------------------- Start Page Five (5) Style ----------------- */
+.pageFive {
+  width: 100%;
+  height: 100vh;
+  background-color: #a19f9f5e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 70px 40px;
+}
+.pageFive .breif h3 {
+  font-size: 35px;
+  color: #333;
+  position: relative;
+}
+.pageFive .breif h3::after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 5px;
+  left: 0;
+  bottom: -15px;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.pageFive .breif h3:hover:after {
+  width: 75%;
+}
+.pageFive .breif p {
+  width: 400px;
+  font-size: 18px;
+  color: #3b3a3ae9;
+  padding: 50px 0 30px;
+  line-height: 1.5;
+}
+.pageFive .breif li {
+  list-style: none;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.pageFive .breif li::after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: 2px solid var(--main-color);
+  left: 0;
+  top: 0;
+}
+.pageFive .breif li i {
+  color: var(--main-color);
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+.pageFive img {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+/* ------------------- End Page Five (5) Style ----------------- */
+
+/* ------------------- Start Page Six (6) Style ----------------- */
+.pageSix {
+  width: 100%;
+  height: 400px;
+  outline: 1px solid #333;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+    url(Images/bg.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+.pieces {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+.pieces div {
+  width: 15%;
+  height: 200px;
+  padding: 20px;
+  text-align: center;
+}
+.pieces div i {
+  font-size: 50px;
+  color: var(--main-color);
+}
+.pieces div span {
+  display: block;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+.pieces div p {
+  font-size: 18px;
+  color: #fff;
+}
+/* ------------------- End Page Six (6) Style ----------------- */
+
+/* ------------------- Start Page Seven (7) Style --------------------- */
+.pageSeven {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 50px;
+}
+.pageSeven h3 {
+  color: #333;
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+}
+.pageSeven h3::after {
+  position: absolute;
+  content: "";
+  left: 70px;
+  bottom: -20px;
+  width: 40%;
+  height: 5px;
+  border-radius: 8px;
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+/* ---------------------- Start Plans Container Style --------------- */
+.plansContainer {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  padding: 0 50px;
+  gap: 50px;
+}
+.plan {
+  width: 25%;
+  height: fit-content;
+  padding: 30px 15px;
+  border: 1px solid #a8a8a8;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+.plan::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  border-radius: 10px;
+  background-color: #0b0c0c;
+  opacity: 0.5;
+  z-index: -2;
+  transition: 0.5s;
+}
+.plan:hover::after {
+  height: 100%;
+}
+.plan:hover h4 {
+  color: var(--main-color);
+}
+.plan h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #a9a5a5;
+  transition: 0.5s;
+}
+.plan:hover .price h5,
+.plan:hover .price span {
+  color: var(--main-color);
+}
+.plan .price {
+  width: 100px;
+  height: 100px;
+  padding: 12px 0;
+  margin: 20px auto;
+  border: 2px solid #6195ff;
+  border-radius: 50%;
+}
+.plan .price h5 {
+  font-size: 40px;
+  transition: 0.5s;
+}
+.plan .price span {
+  font-weight: 600;
+  transition: 0.5s;
+}
+.plan li {
+  list-style: none;
+  color: #a9a5a5;
+  line-height: 1.8;
+}
+.plan button {
+  padding: 10px 20px;
+  color: #333;
+  border: none;
+  background-color: transparent;
+  outline: 2px solid var(--main-color);
+  cursor: pointer;
+  margin: 15px 0 0;
+  border-radius: 5px;
+  transition: 0.5s;
+  position: relative;
+}
+.plan button::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  z-index: -1;
+  transition: 0.5s;
+}
+.plan button:hover::before {
+  width: 100%;
+}
+.plan button:hover {
+  color: #fff;
+}
+/* ---------------------- End Plans Container Style --------------- */
+/* ------------------- End Page Seven (7) Style --------------------- */
+
+/* ------------------ Start Page Eight (8) Style --------------------- */
+.pageEight {
+  width: 100%;
+  height: 400px;
+  outline: 1px solid #333;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+    url(Images/parallex.webp) center no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.info {
+  width: 30%;
+}
+.info .user {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.info .user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.info .user main h4 {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+}
+.info .user main p {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.info .para {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+}
+/* ------------------ End Page Eight (8) Style --------------------- */
+
+/* ------------------ End Page Nine (9) Style --------------------- */
+.pageNine {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 50px;
+}
+.pageNine h3 {
+  color: #333;
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+}
+.pageNine h3::after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  bottom: -20px;
+  width: 40%;
+  height: 5px;
+  border-radius: 8px;
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+
+/* ---------------------- Start Team Container Style --------------- */
+.teamContainer {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0 50px;
+  gap: 70px;
+}
+.team {
+  width: 300px;
+  height: 400px;
+  background-color: #a8a8a866;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+.team:nth-child(2) {
+  align-self: flex-start;
+}
+.team::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: 0;
+  background-color: #0b0c0c;
+  opacity: 0.5;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.team:hover::after {
+  height: 100%;
+}
+.team img {
+  width: 90%;
+  height: 75%;
+  margin: 5%;
+  border-radius: 5px;
+}
+.socialIcon {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.socialIcon a {
+  text-decoration: none;
+  background-color: var(--main-color);
+  padding: 5px;
+  margin: 2px 0;
+  border-radius: 2.5px;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.socialIcon a i {
+  color: #fff;
+  font-size: 20px;
+}
+.team h4 {
+  font-size: 22px;
+  transition: 0.5s;
+}
+.team p {
+  color: #464343;
+  margin: 10px 0;
+  transition: 0.5s;
+}
+.team:hover h4 {
+  color: #fff;
+}
+.team:hover p {
+  color: var(--main-color);
+}
+.team:hover .socialIcon a {
+  visibility: visible;
+  opacity: 1;
+}
+/* ---------------------- End Team Container Style --------------- */
+/* ------------------ End Page Nine (9) Style --------------------- */
+
+/* ------------------ Start Page Ten (10) Style --------------------- */
+.pageTen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pageTen h3 {
+  color: #333;
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+}
+.pageTen h3::after {
+  position: absolute;
+  content: "";
+  left: 70px;
+  bottom: -20px;
+  width: 40%;
+  height: 5px;
+  border-radius: 8px;
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+
+/* ---------------------- Start News Container Style --------------- */
+.newsContainer {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  padding: 0 50px;
+  gap: 50px;
+}
+.new {
+  width: 25%;
+  height: fit-content;
+  background-color: #c7c3c35d;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  transition: 0.5s;
+}
+.new::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  opacity: 0.5;
+  z-index: -1;
+  transition: 0.5s;
+}
+.new:hover:after {
+  height: 100%;
+}
+.new img {
+  width: 100%;
+  height: 200px;
+}
+.new .details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.new .details .comment i {
+  color: var(--main-color);
+  font-size: 14px;
+  padding-right: 2px;
+}
+.new .details .comment span {
+  font-size: 12px;
+}
+.new h4 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+.new p {
+  color: #464343;
+  line-height: 1.5;
+}
+.new button {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2169fa;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.new button i {
+  transition: 0.5s;
+}
+.new button:hover i {
+  padding-left: 15px;
+}
+/* ---------------------- End News Container Style --------------- */
+/* ------------------ End Page Ten (10) Style --------------------- */
+
+/* -------------------- Start Footer Style ------------------------ */
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+}
+footer h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+footer .socialLinks {
+  margin: 10px 0;
+}
+footer .socialLinks i {
+  font-size: 35px;
+  color: #fff;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+footer .socialLinks i:hover {
+  opacity: 0.5;
+}
+footer p {
+  color: #a8a8a8;
+  text-transform: uppercase;
+}
+/* -------------------- End Footer Style ------------------------ */
